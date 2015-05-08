@@ -1,0 +1,45 @@
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+doctype html
+html(lang="ru_Ru")
+    head
+        meta(charset="UTF-8")
+        meta("X-UA-Compatible" content="IE=edge")
+        title
+            block title
+        //SEO
+        meta(name="description",content="Shop_test")
+        meta(name="keywords", content="")
+        meta(name="author", content="Asya Gai")
+        //faveicon
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-57x57.png", sizes="57x57")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-60x60.png", sizes="60x60")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-72x72.png", sizes="72x72")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-76x76.png", sizes="76x76")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-114x114.png", sizes="114x114")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-120x120.png", sizes="120x120")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-144x144.png", sizes="144x144")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-152x152.png", sizes="152x152")
+        link(rel="apple-touch-icon", href="../../img/favicon/apple-icon-180x180.png", sizes="180x180")
+        link(rel="icon", href="../../img/favicon/android-icon-192x192.png", sizes="192x192", type="image/png")
+        link(rel="icon", href="../../img/favicon/favicon-32x32.png", sizes="32x32", type="image/png")
+        link(rel="icon", href="../../img/favicon/favicon-96x96.png", sizes="96x96", type="image/png")
+        link(rel="icon", href="../../img/favicon/favicon-16x16.png", sizes="16x16", type="image/png")
+        link(name="msapplication-TileColor", content="#ffffff")
+        link(name="msapplication-TileImage", content="../../img/favicon//ms-icon-144x144.png", sizes="60x60")
+        link(name="theme-color", content="#ffffff")
+        //css bower
+        link(rel="stylesheet", href='../../bower/normalize.css/normalize.css')
+        link(rel="stylesheet", href='../../bower/qtip2/jquery.qtip.css')
+        //*css all
+        link(rel="stylesheet", href='../../css/style.css')
+
+
+        //*modernizer
+        script(src="../../bower/modernizr/modernizr.js")
+    //*���� ��������
+    body
+        .wrapper
+            .es-content
+                block content
+
+        include ../common/footer.html

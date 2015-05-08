@@ -1,0 +1,29 @@
+- var menuFooterColumn1 = ["О нас", "Наши цены", "Наши скидки", "Акции"]
+- var menuFooterColumn2 = ["Смартфоны", "Планшеты", "Компьютеры", "Аксессуары"]
+- var menuFooterColumn3 = ["Телефоны", "Адреса", "Карта проезда", "Обратная связь"]
+
+
+mixin menuFooter(items)
+    ul.es-meny__footer
+        each item in items
+            li: a(href="#") #(item)
+
+footer.es-footer.es-footer__all.footer
+    .es-conteiner__footer
+
+        .es-footer__block.es-footer__logo
+            a(href='')
+                | Магазин ЭпплShop
+                img(src="../../img/es-logo--footer.png", alt='Магазин ЭпплShop')
+
+
+        nav
+            .es-footer__nav.es-footer__block
+                +menuFooter(menuFooterColumn1)
+            .es-footer__nav.es-footer__block
+                +menuFooter(menuFooterColumn2)
+            .es-footer__nav.es-footer__block
+                +menuFooter(menuFooterColumn3)
+
+
+        .es-footer__block.es-footer__icon

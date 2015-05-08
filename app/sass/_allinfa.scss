@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto!important;
+  overflow: hidden;
+}
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 80px;
+}
+.footer {
+  height: 80px;
+  margin-top: -80px;
+}
+
+
+/*clearfix*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}

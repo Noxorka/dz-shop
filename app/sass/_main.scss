@@ -1,0 +1,41 @@
+/*����������*/
+$colorBlue: #00b9fe;
+$colorGrayBg: #f4f6f9;
+$colorGrayText: #829ab1;
+$colorPurple: #613993;
+
+$font-basis: elektra_text_pro, Helvetica, Arial, sans-serif;
+$font-basis-bold: elektra_text_pro_bold, Helvetica, Arial, sans-serif;
+
+body {
+  color: $colorGrayText;
+  font-family: $font-basis;
+}
+.es-content__body {
+  @extend .clearfix;
+  width: 1000px;
+  margin: 0 auto;
+}
+.es-content-left {
+  float: left;
+  width: 230px;
+}
+.es-content-right {
+  float: right;
+  width: 750px;
+}
+.es-conteiner__footer {
+  @extend .clearfix;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.es-footer__block {
+  float: left;
+  width: 197.5px;
+  margin-right: 70px;
+}
+.es-footer {
+  background: $colorPurple url('../img/es-bg.png') repeat;
+  padding: 60px 0;
+}
