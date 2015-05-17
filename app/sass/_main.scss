@@ -277,29 +277,108 @@ body {
 /*slider*/
 .slider {
   position: relative;
+  margin-bottom: 35px;
   width: 100%;
+  height: 300px !important;
   overflow: hidden;
-  display: inline-block;
-  .slider_list {
-    position: relative;
-    width: 100%;
-  }
-  .slider__item {
+}
+
+// Слайдер -контент
+.slide__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .slider__item{
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
+    left:-1000px;
+
+    &.slider--activ{
+      left:0;
+      z-index: 1;
+    }
+    &.inlide {
+      z-index: 2;
+    }
+
+    .slider__item--block{
+      height: 100%;
+    }
+
+    .slider__infa{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 18px 25px;
+      background: rgba(1,1,1,.5);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4c000000', endColorstr='#4c000000');
+    }
+
+    .slider-list__item_info_link{
+      color:$colorBlue;
+      line-height: 23px;
+      font-size: 18px;
+    }
+    .slider-list__item_info-content{
+      color:#fff;
+      font-size: 14px;
+    }
+
+
   }
-  .slider__item--block {
-    width: 100%;
-    display: block;
-  }
-  &.slider--activ {
-    z-index: 1;
-    position: relative;
-  }
-  &.inslide {
-    z-index: 2;
+}
+
+.slider__controls{
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 132px;
+  z-index: 2;
+
+  .slider__controls--button{
+    position: absolute;
+    text-decoration: none;
+    background: #fff;
+    color: #5c7b98;
+    height: 20px;
+    padding: 8px;
+    transition: .3s;
+
+    &:after{
+      position: absolute;
+      content: "";
+      width: 0;
+      top:0;
+      color:#fff;
+      height: 0;
+      transition: .3s;
+    }
+
+    &.slider__controls--button_last{
+      left: 18px;
+      &:after{
+        right: 100%;
+        border-right:8px solid;
+        border-top:18px solid transparent;
+        border-bottom:18px solid transparent;
+      }
+    }
+    &.slider__controls--button_next{
+      right: 18px;
+      &:after{
+        left: 100%;
+        border-left:8px solid;
+        border-top:18px solid transparent;
+        border-bottom:18px solid transparent;
+      }
+    }
+
+    &:hover{
+      background: $colorBlue;
+      color: #fff;
+      &:after{
+        color: $colorBlue;
+      }
+    }
   }
 }
