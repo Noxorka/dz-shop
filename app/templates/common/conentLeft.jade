@@ -5,46 +5,52 @@
 .es-content-left
     a(href="#", alt="").es-content-left__header--logo
         | Магазин Эппле Shop
-        img(src="../../img/es-logo--header.png", alt='Магазин Эппле Shop')
     //�����
     .es-form--all
         form#es-form-call
             .es-form--header Заказать звонок
             .es-form--body
                 .es-form__form-group
-                    label Ваше имя
-                    input.es-form__form-group--input(type='text', name='name', placeholder="���� ���", qtip-position="right", qtip-content="��� � ��� ����������?")
+                    label.es-form__lable Ваше имя
+                    input.es-form__form-group--input(type='text', name='name', placeholder="Ваше имя", qtip-position="right", qtip-content="Укажите ваше имя")
                 .es-form__form-group
-                    label Телефон
-                    input.es-form__form-group--input(type='text', name='name', placeholder="���� ���", qtip-position="right", qtip-content="��� � ��� ����������?")
+                    label.es-form__lable Телефон
+                    input.es-form__form-group--input(type='text', name='name', placeholder="Ваш телефон", qtip-position="right", qtip-content="Укажите ваш телефон")
                 .es-form__form-group
-                    label Дата звонка:
-
+                    label.es-form__lable Дата звонка:
+                    select.es-form__select.es-form__form-group-date
+                        option 1
+                        option 2
+                        option 3
+                    select.es-form__select.es-form__form-group-manth
+                        option 1
+                        option 2
+                        option 3
                 .es-form__form-group
-                    textarea
+                    textarea.es-form__textarea(placeholder="Комментарий")
                 button.es-form__form--buttom.es-form__form--buttom-blue Отправить
                 input.es-form__form--buttom.es-form__form--buttom-gray(type='reset', value='Очистить')
     //�������
     ul.es-gallary
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-1.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-2.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-3.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-4.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-5.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-6.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-7.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-8.jpg", alt="")
-        li
+        li.es-gallary--img
             img(src="../../img/gallary/gl-img-9.jpg", alt="")
     //��������
-    .es-contact-block
-        .es-contact-block--adress �.������, ��.����� 246, ����: 214
-        .es-contact-block--phone +7(921) 322-12-32
+    ul.es-contact-block
+        li.es-contact-block__li.es-contact-block--adress г. Москва, ул. Новая 246, офис 214.
+        li.es-contact-block__li.es-contact-block--phone +7(921) 322-12-32

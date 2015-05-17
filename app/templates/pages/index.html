@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta X-UA-Compatible content="IE=edge">
-    <title>
-      <title>Article Title</title>
-    </title>
+    <title>Интернет-магазин Эппл-Shop</title>
     <!--SEO-->
     <meta name="description" content="Shop_test">
     <meta name="keywords" content="">
@@ -40,25 +38,35 @@
     <div class="wrapper">
       <div class="es-content">
         <div class="es-content__body">
-          <div class="es-content-left"><a href="#" alt="" class="es-content-left__header--logo">Магазин Эппле Shop<img src="../../img/es-logo--header.png" alt="Магазин Эппле Shop"></a>
+          <div class="es-content-left"><a href="#" alt="" class="es-content-left__header--logo">Магазин Эппле Shop</a>
             <!--�����-->
             <div class="es-form--all">
               <form id="es-form-call">
                 <div class="es-form--header">Заказать звонок</div>
                 <div class="es-form--body">
                   <div class="es-form__form-group">
-                    <label>Ваше имя</label>
-                    <input type="text" name="name" placeholder="���� ���" qtip-position="right" qtip-content="��� � ��� ����������?" class="es-form__form-group--input">
+                    <label class="es-form__lable">Ваше имя</label>
+                    <input type="text" name="name" placeholder="Ваше имя" qtip-position="right" qtip-content="Укажите ваше имя" class="es-form__form-group--input">
                   </div>
                   <div class="es-form__form-group">
-                    <label>Телефон</label>
-                    <input type="text" name="name" placeholder="���� ���" qtip-position="right" qtip-content="��� � ��� ����������?" class="es-form__form-group--input">
+                    <label class="es-form__lable">Телефон</label>
+                    <input type="text" name="name" placeholder="Ваш телефон" qtip-position="right" qtip-content="Укажите ваш телефон" class="es-form__form-group--input">
                   </div>
                   <div class="es-form__form-group">
-                    <label>Дата звонка:</label>
+                    <label class="es-form__lable">Дата звонка:</label>
+                    <select class="es-form__select es-form__form-group-date">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                    <select class="es-form__select es-form__form-group-manth">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
                   </div>
                   <div class="es-form__form-group">
-                    <textarea></textarea>
+                    <textarea placeholder="Комментарий" class="es-form__textarea"></textarea>
                   </div>
                   <button class="es-form__form--buttom es-form__form--buttom-blue">Отправить</button>
                   <input type="reset" value="Очистить" class="es-form__form--buttom es-form__form--buttom-gray">
@@ -67,50 +75,179 @@
             </div>
             <!--�������-->
             <ul class="es-gallary">
-              <li><img src="../../img/gallary/gl-img-1.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-2.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-3.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-4.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-5.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-6.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-7.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-8.jpg" alt=""></li>
-              <li><img src="../../img/gallary/gl-img-9.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-1.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-2.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-3.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-4.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-5.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-6.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-7.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-8.jpg" alt=""></li>
+              <li class="es-gallary--img"><img src="../../img/gallary/gl-img-9.jpg" alt=""></li>
             </ul>
             <!--��������-->
-            <div class="es-contact-block">
-              <div class="es-contact-block--adress">�.������, ��.����� 246, ����: 214</div>
-              <div class="es-contact-block--phone">+7(921) 322-12-32</div>
-            </div>
+            <ul class="es-contact-block">
+              <li class="es-contact-block__li es-contact-block--adress">г. Москва, ул. Новая 246, офис 214.</li>
+              <li class="es-contact-block__li es-contact-block--phone">+7(921) 322-12-32</li>
+            </ul>
           </div>
           <div class="es-content-right">
             <!--slider-->
-            <!--Block-->
+            
             <div class="es-block--all">
-              <div class="es-block--header">Популярные товары</div>
+              <div class="es-block--header"><span>Популярные товары</span></div>
               <div class="es-block--body">
-                <ul>
-                  <li class="es-block__card"><a href="" title="">
-                      <div class="es-block__card--header"><img src="" alt=""><a href="" title></a></div>
+                <ul class="es-block__card">
+                  <li class="es-block__card__item"><a href="" title="" class="es-block__card__item__a">
+                      <div class="es-block__card--header"><img src="../../img/tovar/popular_display.jpg" alt="" class="es-block__card--img"><span class="es-block__card--text">
+                          Apple Thunderb
+                          Display 27"</span></div>
                       <table class="es-block__card--infa-product">
-                        <tr>
-                          <td>Артикул</td>
+                        <tr class="es-block__card--string-tover">
+                          <td class="es-block__card--lable-tover es-block__card--string-tover">Артикул</td>
                           <td>42787895</td>
                         </tr>
                         <tr>
-                          <td>Опция</td>
+                          <td class="es-block__card--string-tover">Опция</td>
                           <td>включена</td>
                         </tr>
                         <tr>
-                          <td>Цвет</td>
+                          <td class="es-block__card--string-tover">Цвет</td>
                           <td>серебрянный</td>
                         </tr>
                         <tr>
-                          <td>Размер</td>
+                          <td class="es-block__card--string-tover">Размер</td>
                           <td>1280х1245х90</td>
                         </tr>
                         <tr>
-                          <td>Вес</td>
+                          <td class="es-block__card--string-tover">Вес</td>
+                          <td>9 кг</td>
+                        </tr>
+                      </table></a></li>
+                  <li class="es-block__card__item"><a href="" title="" class="es-block__card__item__a">
+                      <div class="es-block__card--header"><img src="../../img/tovar/popular_display2.jpg" alt="" class="es-block__card--img"><span class="es-block__card--text">iMac27"</span></div>
+                      <table class="es-block__card--infa-product">
+                        <tr class="es-block__card--string-tover">
+                          <td class="es-block__card--lable-tover es-block__card--string-tover">Артикул</td>
+                          <td>42787895</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Опция</td>
+                          <td>включена</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Цвет</td>
+                          <td>серебрянный</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Размер</td>
+                          <td>1280х1245х90</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Вес</td>
+                          <td>9 кг</td>
+                        </tr>
+                      </table></a></li>
+                  <li class="es-block__card__item"><a href="" title="" class="es-block__card__item__a">
+                      <div class="es-block__card--header"><img src="../../img/tovar/popular_phone.jpg" alt="" class="es-block__card--img"><span class="es-block__card--text">iPhone 5s Gold</span></div>
+                      <table class="es-block__card--infa-product">
+                        <tr class="es-block__card--string-tover">
+                          <td class="es-block__card--lable-tover es-block__card--string-tover">Артикул</td>
+                          <td>42787895</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Опция</td>
+                          <td>включена</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Цвет</td>
+                          <td>серебрянный</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Размер</td>
+                          <td>1280х1245х90</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Вес</td>
+                          <td>9 кг</td>
+                        </tr>
+                      </table></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="es-block--all">
+              <div class="es-block--header"><span>Товары со скидкой</span></div>
+              <div class="es-block--body">
+                <ul class="es-block__card">
+                  <li class="es-block__card__item"><a href="" title="" class="es-block__card__item__a">
+                      <div class="es-block__card--header"><img src="../../img/tovar/sale_ipоd.jpg" alt="" class="es-block__card--img"><span class="es-block__card--text">iPad Air Wi-Fi 128GB - Silver</span></div>
+                      <table class="es-block__card--infa-product">
+                        <tr class="es-block__card--string-tover">
+                          <td class="es-block__card--lable-tover es-block__card--string-tover">Артикул</td>
+                          <td>42787895</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Опция</td>
+                          <td>включена</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Цвет</td>
+                          <td>серебрянный</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Размер</td>
+                          <td>1280х1245х90</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Вес</td>
+                          <td>9 кг</td>
+                        </tr>
+                      </table></a></li>
+                  <li class="es-block__card__item"><a href="" title="" class="es-block__card__item__a">
+                      <div class="es-block__card--header"><img src="../../img/tovar/sale_ipad.jpg" alt="" class="es-block__card--img"><span class="es-block__card--text">Apple iPod nano 7G 16 ГБ Blue</span></div>
+                      <table class="es-block__card--infa-product">
+                        <tr class="es-block__card--string-tover">
+                          <td class="es-block__card--lable-tover es-block__card--string-tover">Артикул</td>
+                          <td>42787895</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Опция</td>
+                          <td>включена</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Цвет</td>
+                          <td>серебрянный</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Размер</td>
+                          <td>1280х1245х90</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Вес</td>
+                          <td>9 кг</td>
+                        </tr>
+                      </table></a></li>
+                  <li class="es-block__card__item"><a href="" title="" class="es-block__card__item__a">
+                      <div class="es-block__card--header"><img src="../../img/tovar/sale_air.jpg" alt="" class="es-block__card--img"><span class="es-block__card--text">Роутер Wi-Fi Apple AirPort</span></div>
+                      <table class="es-block__card--infa-product">
+                        <tr class="es-block__card--string-tover">
+                          <td class="es-block__card--lable-tover es-block__card--string-tover">Артикул</td>
+                          <td>42787895</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Опция</td>
+                          <td>включена</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Цвет</td>
+                          <td>серебрянный</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Размер</td>
+                          <td>1280х1245х90</td>
+                        </tr>
+                        <tr>
+                          <td class="es-block__card--string-tover">Вес</td>
                           <td>9 кг</td>
                         </tr>
                       </table></a></li>
