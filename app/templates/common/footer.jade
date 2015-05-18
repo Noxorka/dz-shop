@@ -6,7 +6,7 @@
 mixin menuFooter(items)
     ul.es-meny__footer
         each item in items
-            li: a(href="#") #(item)
+            li.es-meny__footer--item: a(href="#") #(item)
 
 footer.es-footer.es-footer__all.footer
     .es-conteiner__footer
@@ -17,13 +17,31 @@ footer.es-footer.es-footer__all.footer
                 img(src="../../img/es-logo--footer.png", alt='Магазин ЭпплShop')
 
 
-        nav
-            .es-footer__nav.es-footer__block
-                +menuFooter(menuFooterColumn1)
-            .es-footer__nav.es-footer__block
-                +menuFooter(menuFooterColumn2)
-            .es-footer__nav.es-footer__block
-                +menuFooter(menuFooterColumn3)
+
+        .es-footer__nav.es-footer__block
+            | О магазине
+            +menuFooter(menuFooterColumn1)
+        .es-footer__nav.es-footer__block
+            | Каталог
+            +menuFooter(menuFooterColumn2)
+        .es-footer__nav.es-footer__block
+            | Контакты
+            +menuFooter(menuFooterColumn3)
 
 
         .es-footer__block.es-footer__icon
+
+            a(href="", alt="").es-footer__icon--el.soc-icon--appStore
+                | Доступ к AppStore
+
+            a(href="", alt="").es-footer__icon--el.soc-icon--GooglePlay
+                | Доступ к Google play
+
+            a(href="", alt="").es-footer__icon--el.soc-icon--vk
+                | VK
+
+            a(href="", alt="").es-footer__icon--el.soc-icon--fb
+                | Facebook
+
+            a(href="", alt="").es-footer__icon--el.soc-icon--tv
+                | Tvitter
