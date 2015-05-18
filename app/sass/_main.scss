@@ -18,6 +18,15 @@ body {
   width: 230px;
 }
 
+#scroll{
+  position: fixed;
+  background-color: $colorBlue;
+  color: #ffffff;
+  bottom: 5%;
+  z-index: 100;
+  right: 5%;
+  padding: 10px;
+}
 
 /*left block*/
 .es-content-left__header--logo {
@@ -40,6 +49,15 @@ body {
   font-family: $font-basis-bold;
   font-weight: bold;
   margin-bottom: 25px;
+}
+.es-form__select {
+  scrollbar-face-color: #000000;
+  scrollbar-shadow-color: #2D2C4D;
+  scrollbar-highlight-color:#7D7E94;
+  scrollbar-3dlight-color: #7D7E94;
+  scrollbar-darkshadow-color: #2D2C4D;
+  scrollbar-track-color: #7D7E94;
+  scrollbar-arrow-color: #C1C1D1;
 }
 
 /*/form*/
@@ -140,17 +158,6 @@ body {
   margin: 0 auto;
 }
 
-.es-conteiner__footer {
-  @extend .clearfix;
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.es-footer__block {
-  float: left;
-  width: 197.5px;
-  margin-right: 70px;
-}
 .es-footer {
   background: $colorPurple url('../img/es-bg.png') repeat;
   padding: 60px 0;
@@ -297,7 +304,7 @@ body {
       left:0;
       z-index: 1;
     }
-    &.inlide {
+    &.inslide {
       z-index: 2;
     }
 
@@ -381,4 +388,93 @@ body {
       }
     }
   }
+}
+
+/*footer*/
+
+.es-conteiner__footer {
+  @extend .clearfix;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.es-footer__block {
+  float: left;
+  text-align: -webkit-match-parent;
+  display: inline-block;
+}
+
+.es-footer__logo{
+  background: url("../img/es-logo--footer.png");
+  display: block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  width: 139px;
+  height: 39px;
+  margin-top: 30px;
+  margin-right: 110px;
+}
+
+.es-footer__nav {
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.es-meny__footer--item {
+  padding: 5px 0;
+}
+
+.es-footer__nav {
+  width: 150px;
+
+}
+.es-footer__icon {
+  margin-left: 110px;
+  width: 190px;
+}
+
+.es-footer__icon--el {
+  display: inline-block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  margin: 5px 0;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+.soc-icon--appStore {
+  background: url("../img/icon-appStore.png");
+  width: 90px;
+  height: 32px;
+  float: left;
+}
+.soc-icon--GooglePlay {
+  background: url("../img/icon-GooglePlay.png");
+  width: 90px;
+  height: 32px;
+  float: right;
+}
+.soc-icon--vk {
+  background: url("../img/icon-sprite-ss.png");
+  height: 44px;
+  width: 44px;
+  background-position: -2 0;
+  margin-right: 29px;
+}
+
+.soc-icon--fb {
+  background: url("../img/icon-sprite-ss.png");
+  height: 44px;
+  width: 44px;
+  background-position: 100px 0;
+  margin-right: 29px;
+}
+
+.soc-icon--tv {
+  background: url("../img/icon-sprite-ss.png");
+  height: 44px;
+  width: 44px;
+  background-position: 48px 0;
 }

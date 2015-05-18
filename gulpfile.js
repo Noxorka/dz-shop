@@ -1,28 +1,22 @@
 "use strict";
 
 var gulp = require('gulp'),
-    sass = require('gulp-sass');
+    jade = require('gulp-jade');
 
-
-
-//Работа c js
-gulp.task('js', function () {
-  gulp.src('app/js/*.js')
-    .pipe(connect.reload());
+gulp.task('jade', function() {
+    gulp.src('app/templates/pages/*.jade')
+        .pipe(jade())
+        .on('error', log)
+        .pipe(prettify({indent_size: 2}))
+        .pipe(gulp.dest('app/'))
+        .pipe(reload({stream: true}));
 });
 
-//Работа c html
-gulp.task('html', function () {
-    gulp.src('./app/*.html')
-    .pipe(connect.reload());
-});
- 
- //Слежка
+
+// слежка и запуск задач
 gulp.task('watch', function () {
-    gulp.watch(['app/*.html'], ['html']);
-    gulp.watch(['sass/*.sass'], ['sass']);
-    gulp.watch(['app/js/*.js'], ['js']);
+    gulp.watch('app/jade/**/*.jade', ['jade']);
 });
- 
- //Запуск всех штукастей
-gulp.task('default', ['watch']);
+
+// Задача по-умолчанию
+gulp.task('default');

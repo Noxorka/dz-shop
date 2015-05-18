@@ -37,6 +37,7 @@
   <body>
     <div class="wrapper">
       <div class="es-content">
+        <div id="scroll">Наверх</div>
         <div class="es-content__body">
           <div class="es-content-left"><a href="#" alt="" class="es-content-left__header--logo">Магазин Эппле Shop</a>
             <!--�����-->
@@ -54,12 +55,12 @@
                   </div>
                   <div class="es-form__form-group">
                     <label class="es-form__lable">Дата звонка:</label>
-                    <select class="es-form__select es-form__form-group-date">
+                    <select data-date="day" class="es-form__select es-form__form-group-date">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
-                    <select class="es-form__select es-form__form-group-manth">
+                    <select data-date="month" class="es-form__select es-form__form-group-manth">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -99,11 +100,12 @@
                     <div class="slider__item--block"><img src="../../img/slider/sl-phone.jpg" alt="" class="slider__pic">
                       <div class="slider__infa"> ывмыамав</div>
                     </div>
-                    <li class="slider__item"></li>
-                    <div class="slider__item--block"><img src="../../img/slider/sl-3d_phone.jpg" alt="" class="slider__pic">
-                      <div class="slider__infa"></div>
-                    </div>
-                    <li class="slider__item"></li>
+                  </li>
+                  <li class="slider__item">
+                    <div class="slider__item--block"></div><img src="../../img/slider/sl-3d_phone.jpg" alt="" class="slider__pic">
+                    <div class="slider__infa"></div>
+                  </li>
+                  <li class="slider__item">
                     <div class="slider__item--block"><img src="../../img/slider/sl-monitor.jpg" alt="" class="slider__pic"></div>
                     <div class="slider__infa"></div>
                   </li>
@@ -281,33 +283,31 @@
 <footer class="es-footer es-footer__all footer">
   <div class="es-conteiner__footer">
     <div class="es-footer__block es-footer__logo"><a href="">Магазин ЭпплShop<img src="../../img/es-logo--footer.png" alt="Магазин ЭпплShop"/></a></div>
-    <nav>
-      <div class="es-footer__nav es-footer__block">
-        <ul class="es-meny__footer">
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-        </ul>
-      </div>
-      <div class="es-footer__nav es-footer__block">
-        <ul class="es-meny__footer">
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-        </ul>
-      </div>
-      <div class="es-footer__nav es-footer__block">
-        <ul class="es-meny__footer">
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-          <li><a href="#">#(item)</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="es-footer__block es-footer__icon"></div>
+    <div class="es-footer__nav es-footer__block">О магазине
+      <ul class="es-meny__footer">
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+      </ul>
+    </div>
+    <div class="es-footer__nav es-footer__block">Каталог
+      <ul class="es-meny__footer">
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+      </ul>
+    </div>
+    <div class="es-footer__nav es-footer__block">Контакты
+      <ul class="es-meny__footer">
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+        <li class="es-meny__footer--item"><a href="#">#(item)</a></li>
+      </ul>
+    </div>
+    <div class="es-footer__block es-footer__icon"><a href="" alt="" class="es-footer__icon--el soc-icon--appStore">Доступ к AppStore</a><a href="" alt="" class="es-footer__icon--el soc-icon--GooglePlay">Доступ к Google play</a><a href="" alt="" class="es-footer__icon--el soc-icon--vk">VK</a><a href="" alt="" class="es-footer__icon--el soc-icon--fb">Facebook</a><a href="" alt="" class="es-footer__icon--el soc-icon--tv">Tvitter</a></div>
   </div>
 </footer>
     <!--*js-->
