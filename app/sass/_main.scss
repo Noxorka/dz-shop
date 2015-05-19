@@ -61,7 +61,6 @@ body {
 }
 
 /*/form*/
-
 /*Gallary*/
 .es-gallary {
   padding: 0;
@@ -85,6 +84,7 @@ body {
     margin-right: 7px;
   }
 }
+
 .es-form__form-group {
   @extend  .clearfix;
   margin-bottom: 15px;
@@ -100,7 +100,7 @@ body {
 }
 .es-form__form-group--input {
   width: 110px;
-  padding: 9px;
+  padding: 1px;
   border: 1px solid $colorGrayText;
 }
 .es-form__select {
