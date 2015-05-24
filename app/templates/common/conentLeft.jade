@@ -19,13 +19,11 @@
                 .es-form__form-group
                     label.es-form__lable Дата звонка:
                     select.es-form__select.es-form__form-group-date(data-date="day")
-                        option 1
-                        option 2
-                        option 3
+                        - for (var i=1; i<=24; i++)
+                            option(value=i)=i
                     select.es-form__select.es-form__form-group-manth(data-date="month")
-                        option 1
-                        option 2
-                        option 3
+                        - for (var i=1; i<=60; i++)
+                            option(value=i)=i
                 .es-form__form-group
                     textarea.es-form__textarea(placeholder="Комментарий")
                 button.es-form__form--buttom.es-form__form--buttom-blue Отправить

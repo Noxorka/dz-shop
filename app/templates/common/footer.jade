@@ -19,14 +19,25 @@ footer.es-footer.es-footer__all.footer
 
 
         .es-footer__nav.es-footer__block
-            | О магазине
-            +menuFooter(menuFooterColumn1)
+            .footer__options-title О магазине
+            ul
+                each title in ["О нас", "Наши цены", "Наши скидки", "Акции"]
+                    li.footer__menu-item
+                        a(href="#").footer__menu-link= title
+
         .es-footer__nav.es-footer__block
-            | Каталог
-            +menuFooter(menuFooterColumn2)
+            .footer__options-title Каталог
+            ul
+                each title in ["О нас", "Наши цены", "Наши скидки", "Акции"]
+                    li.footer__menu-item
+                        a(href="#").footer__menu-link= title
+
         .es-footer__nav.es-footer__block
-            | Контакты
-            +menuFooter(menuFooterColumn3)
+            .footer__options-title Контакты
+            ul
+                each title in ["Телефоны", "Адреса", "Карта проезда", "Обратная связь"]
+                    li.footer__menu-item
+                        a(href="#").footer__menu-link= title
 
 
         .es-footer__block.es-footer__icon
