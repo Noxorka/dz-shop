@@ -1,13 +1,10 @@
 {
   "name": "dz4",
   "dependencies": {
-    "jquery": "1.11",
-    "normalize.css": "~3.0.3",
-    "modernizr": "~2.8.3",
-    "qtip2": "~2.2.1",
-    "jquery-placeholder": "~2.1.1",
-  },
-  "devDependencies": {
-    "simple-select": "*"
+      "jquery": "1.11",
+      "normalize.css": "~3.0.3",
+      "modernizr": "~2.8.3",
+      "qtip2": "~2.2.1",
+      "jquery-placeholder": "~2.1.1"
   }
 }
